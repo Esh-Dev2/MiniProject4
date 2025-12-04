@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <!-- Essential Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>InstaDev – AI-Powered Hiring Platform | ATS, Talent CRM & Automation</title>
+
+    <!-- SEO Description -->
+    <meta name="description" content="InstaDev is a modern AI-powered hiring platform that streamlines candidate sourcing, screening, ATS workflows, and interview automation. Built for US companies to hire faster with intelligent talent pipelines." />
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="InstaDev, AI hiring software, hiring automation, ATS platform, Applicant Tracking System, talent CRM, recruitment automation, AI screening, sourcing automation, HR tools, candidate pipeline, hiring tools, US hiring software, AI recruiter" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://instadev.online/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Author -->
+    <meta name="author" content="InstaDev" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets//favicon.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets//favicon.png" />
+    <link rel="apple-touch-icon" href="./assets//favicon.png" />
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:title" content="InstaDev – AI-Powered ATS & Hiring Automation" />
+    <meta property="og:description" content="A next-generation AI-driven hiring platform helping teams automate sourcing, screening, and applicant workflows. Faster hiring. Better candidates." />
+    <meta property="og:image" content="https://instadev.online/assets/instadevlogo.png" />
+    <meta property="og:url" content="https://instadev.online/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="InstaDev" />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="InstaDev – AI Hiring Platform" />
+    <meta name="twitter:description" content="Automate hiring with AI-powered sourcing, ATS workflows, and talent engagement tools." />
+    <meta name="twitter:image" content="https://instadev.online/assets/instadevlogo.png" />
+
+    <!-- Schema.org for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "InstaDev",
+      "operatingSystem": "All",
+      "applicationCategory": "BusinessApplication",
+      "description": "AI-powered hiring automation platform with ATS, candidate sourcing, and workflow intelligence.",
+      "url": "https://instadev.com",
+      "image": "https://instadev.online/assets/og-image.png",
+      "creator": {
+        "@type": "Organization",
+        "name": "InstaDev"
+      }
+    }
+    </script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./output.css" />
+</head>
+
+
+<body>
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between w-full h-18 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur">
+        <a href="/">
+            <img class="h-9 w-auto" width="138" height="36" alt="logo" src="/assets/instadevlogo.svg" />
+        </a>
+        <div class="hidden lg:flex items-center gap-8 transition duration-500">
+            <a href="#creations" class="hover:text-slate-300 transition">
+                Creations
+            </a>
+            <a href="#about" class="hover:text-slate-300 transition">
+                About
+            </a>
+            <a href="#testimonials" class="hover:text-slate-300 transition">
+                Testimonials
+            </a>
+            <a href="#contact" class="hover:text-slate-300 transition">
+                Contact
+            </a>
+        </div>
+        <div class="hidden lg:block space-x-3">
+            <button
+                class="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md active:scale-95">
+                Get started
+            </button>
+            <button
+                class="hover:bg-slate-300/20 transition px-6 py-2 border border-slate-400 rounded-md active:scale-95">
+                Login
+            </button>
+        </div>
+        <button class="lg:hidden active:scale-90 transition" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu size-6.5" aria-hidden="true">
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <div id="nav-links" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 lg:hidden transition-transform duration-400 -translate-x-full">
+        <a href="/#creations">
+            Creations
+        </a>
+        <a href="/#about">
+            About
+        </a>
+        <a href="/#testimonials">
+            Testimonials
+        </a>
+        <a href="/#contact">
+            Contact
+        </a>
+        <button id="close-menu" class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-slate-100 hover:bg-slate-200 transition text-black rounded-md flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x" aria-hidden="true">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Hero Section -->
+     <!-- Hero Section — InstaDev (Workllama-inspired) -->
+<section class="flex flex-col items-center -mt-18 relative">
+  <!-- Background gradient (updated violet) -->
+  <svg class="absolute -z-10 w-full -mt-40 md:mt-0" width="1440" height="676" viewBox="0 0 1440 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="-92" y="-948" width="1624" height="1624" rx="812" fill="url(#a)"></rect>
+    <defs>
+      <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="rotate(90 428 292) scale(812)">
+        <!-- make the inner stop transparent so the vignette feels like Workllama -->
+        <stop offset=".63" stop-color="#6b46c1" stop-opacity="0"></stop>
+        <stop offset="1" stop-color="#6b46c1"></stop>
+      </radialGradient>
+    </defs>
+  </svg>
+
+  <!-- Micro CTA -->
+  <a class="flex items-center mt-48 gap-2 border border-slate-600 text-gray-50 rounded-full px-4 py-2"> <div class="size-2.5 bg-green-500 rounded-full animate-pulse"></div> <span>Book a live demo today</span> </a>
+
+  <!-- Heading -->
+  <h1 class="text-center text-4xl sm:text-5xl md:text-6xl leading-tight md:leading-[70px] mt-4 font-semibold max-w-3xl">
+    Hire smarter. Hire faster. Build your hiring pipeline with <span class="text-[#6b46c1]">InstaDev</span>.
+  </h1>
+
+  <!-- Subheading -->
+  <p class="text-center text-base max-w-lg mt-4 text-slate-300">
+    InstaDev combines an intelligent ATS, interview scheduling, and AI candidate matching so your team spends less time sourcing and more time hiring great people. End-to-end hiring for startups and enterprises.
+  </p>
+
+  <!-- CTAs -->
+  <div class="flex items-center gap-4 mt-8">
+    <button
+      class="flex items-center gap-2 text-white active:scale-95 rounded-lg px-7 h-11 transition"
+      style="background-color:#6b46c1;"
+      onmouseover="this.style.backgroundColor='#5b3db0'"
+      onmouseout="this.style.backgroundColor='#6b46c1'">
+      Get InstaDev
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+        <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+      </svg>
+    </button>
+
+    <button
+      class="border rounded-lg px-8 h-11 transition hover:bg-white/10"
+      style="border-color: rgba(255,255,255,0.12); color: #e6e6e9;">
+      Book a demo
+    </button>
+  </div>
+
+  <!-- Showcase image (keep or replace with product screenshots) -->
+  <figure class="relative w-full h-full [perspective:800px] mt-16 max-w-4xl mx-auto flex flex-col items-center justify-center">
+    <div class="relative [transform-style:preserve-3d] w-full max-w-4xl">
+      <img
+        class="w-full rounded-[15px] will-change-transform [transform:translateZ(0)] shadow-xl"
+        alt="InstaDev product showcase"
+        src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/hero-section-showcase-2.png" />
+    </div>
+  </figure>
+</section>
+
+
+    <!-- Our Creations Section -->
+    <section class="flex flex-col items-center" id="creations">
+    <div class="flex flex-col items-center mt-32">
+        <h2 class="text-center text-4xl font-semibold max-w-2xl">
+            Explore our latest
+            <span class="bg-gradient-to-t from-[#6B4DFF] to-black p-1 bg-left inline-block bg-no-repeat">innovations</span>
+        </h2>
+        <p class="text-center text-slate-400 max-w-lg mt-3">
+            A visual look at the most advanced modules inside InstaDev — built to streamline hiring,
+            improve recruiter efficiency, and empower talent intelligence.
+        </p>
+    </div>
+
+    <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto">
+
+        <!-- Module 1 -->
+        <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+            <img class="h-full w-full object-cover object-center"
+                 alt="ATS Dashboard"
+                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&h=400&auto=format&fit=crop" />
+            <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 
+                        transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <h1 class="text-3xl font-semibold">ATS Dashboard</h1>
+                <p class="text-sm mt-2">
+                    Track applications, schedules, and hiring insights in one smart,
+                    real-time dashboard designed for speed and clarity.
+                </p>
+            </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+            <img class="h-full w-full object-cover object-right"
+                 alt="Candidate Intelligence"
+                 src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a5?q=80&w=800&h=400&auto=format&fit=crop" />
+            <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 
+                        transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <h1 class="text-3xl font-semibold">Candidate Intelligence</h1>
+                <p class="text-sm mt-2">
+                    AI-powered matching that evaluates skills, experience, and fit to
+                    deliver accurate recommendations instantly.
+                </p>
+            </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+            <img class="h-full w-full object-cover object-center"
+                 alt="Job Distribution"
+                 src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&h=400&auto=format&fit=crop" />
+            <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 
+                        transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <h1 class="text-3xl font-semibold">Job Distribution</h1>
+                <p class="text-sm mt-2">
+                    Publish openings across multiple job boards and channels with a
+                    single click — expanding visibility and accelerating applications.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- About Section -->
+<section class="flex flex-col items-center" id="about">
+    <div class="flex flex-col items-center mt-32">
+        <h2 class="text-center text-4xl font-semibold max-w-2xl">
+            Our powerful
+            <span class="bg-gradient-to-t from-[#6a4ff7] to-black p-1 bg-left inline-block bg-no-repeat">products</span>
+        </h2>
+        <p class="text-center text-slate-400 max-w-lg mt-3">
+            The InstaDev suite is purpose-built to streamline hiring, automate workflows, 
+            and deliver unmatched talent engagement — all in one integrated platform.
+        </p>
+    </div>
+
+    <div class="relative max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 mt-18">
+
+        <!-- Product 1 -->
+        <div class="py-10 border-b border-slate-700 md:py-0 md:border-r md:border-b-0 md:px-10">
+            <div class="size-10 p-2 bg-[#6a4ff7]/20 border border-[#6a4ff7]/40 rounded">
+                <img alt="ATS" src="https://cdn-icons-png.flaticon.com/512/9703/9703288.png">
+            </div>
+            <div class="mt-5 space-y-2">
+                <h3 class="text-base font-medium text-slate-200">Smart ATS</h3>
+                <p class="text-sm text-slate-400">
+                    An AI-powered Applicant Tracking System that automates screening, scoring, 
+                    pipeline movement, and hiring workflows with unmatched accuracy.
+                </p>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="py-10 border-b border-slate-700 md:py-0 lg:border-r md:border-b-0 md:px-10">
+            <div class="size-10 p-2 bg-[#6a4ff7]/20 border border-[#6a4ff7]/40 rounded">
+                <img alt="Candidate Engagement" src="https://cdn-icons-png.flaticon.com/512/9333/9333384.png">
+            </div>
+            <div class="mt-5 space-y-2">
+                <h3 class="text-base font-medium text-slate-200">Candidate Engagement Engine</h3>
+                <p class="text-sm text-slate-400">
+                    Automated messaging, reminders, and personalized journeys designed to keep 
+                    talent informed, engaged, and ready to convert.
+                </p>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="py-10 border-b border-slate-700 md:py-0 md:border-b-0 md:px-10">
+            <div class="size-10 p-2 bg-[#6a4ff7]/20 border border-[#6a4ff7]/40 rounded">
+                <img alt="Community" src="https://cdn-icons-png.flaticon.com/512/9422/9422937.png">
+            </div>
+            <div class="mt-5 space-y-2">
+                <h3 class="text-base font-medium text-slate-200">Talent Community Platform</h3>
+                <p class="text-sm text-slate-400">
+                    Build your own branded talent hub with job recommendations, newsletters, 
+                    events, and real-time career pathways.
+                </p>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="py-10 border-b border-slate-700 md:py-0 md:border-r md:border-b-0 md:px-10">
+            <div class="size-10 p-2 bg-[#6a4ff7]/20 border border-[#6a4ff7]/40 rounded">
+                <img alt="Referral System" src="https://cdn-icons-png.flaticon.com/512/8722/8722733.png">
+            </div>
+            <div class="mt-5 space-y-2">
+                <h3 class="text-base font-medium text-slate-200">Referral Automation System</h3>
+                <p class="text-sm text-slate-400">
+                    Incentivize and manage employee referrals with automated tracking, 
+                    bonus workflows, and performance analytics.
+                </p>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="py-10 border-b border-slate-700 md:py-0 lg:border-r md:border-b-0 md:px-10">
+            <div class="size-10 p-2 bg-[#6a4ff7]/20 border border-[#6a4ff7]/40 rounded">
+                <img alt="Job Distribution" src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png">
+            </div>
+            <div class="mt-5 space-y-2">
+                <h3 class="text-base font-medium text-slate-200">Automated Job Distribution</h3>
+                <p class="text-sm text-slate-400">
+                    Publish roles to career sites, job boards, and social networks with a single click — 
+                    fully trackable and optimized.
+                </p>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="py-10 md:py-0 md:px-10">
+            <div class="size-10 p-2 bg-[#6a4ff7]/20 border border-[#6a4ff7]/40 rounded">
+                <img alt="Analytics" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png">
+            </div>
+            <div class="mt-5 space-y-2">
+                <h3 class="text-base font-medium text-slate-200">AI Analytics Dashboard</h3>
+                <p class="text-sm text-slate-400">
+                    Actionable insights for hiring velocity, talent quality, recruiter efficiency, and 
+                    conversion rates — all in one dashboard.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="flex flex-col items-center" id="testimonials">
+        <div class="flex flex-col items-center mt-32">
+            <h2 class="text-center text-4xl font-semibold max-w-2xl">Our
+                <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">testimonials</span>
+            </h2>
+            <p class="text-center text-slate-400 max-w-lg mt-3">A visual collection of
+                our most recent works - each piece crafted with intention, emotion, and style.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 max-w-6xl mx-auto">
+
+    <div class="group border border-slate-800 p-6 rounded-xl">
+        <p class="text-slate-100 text-base">
+            InstaDev streamlined our entire hiring workflow. The automation reduced manual effort by almost 60%.
+        </p>
+        <div class="flex flex-col mt-8 group-hover:-translate-y-1 duration-300">
+            <h2 class="text-gray-200 font-medium">Arjun Verma</h2>
+            <p class="text-indigo-500">Talent Acquisition Lead</p>
+        </div>
+    </div>
+
+    <div class="group border border-slate-800 p-6 rounded-xl">
+        <p class="text-slate-100 text-base">
+            The AI-driven recommendations are unbelievably accurate. It helped us prioritize top applicants instantly.
+        </p>
+        <div class="flex flex-col mt-8 group-hover:-translate-y-1 duration-300">
+            <h2 class="text-gray-200 font-medium">Maya Reddy</h2>
+            <p class="text-indigo-500">HR Tech Consultant</p>
+        </div>
+    </div>
+
+    <div class="group border border-slate-800 p-6 rounded-xl">
+        <p class="text-slate-100 text-base">
+            A clean, reliable platform. The engagement engine improved our candidate response rates dramatically.
+        </p>
+        <div class="flex flex-col mt-8 group-hover:-translate-y-1 duration-300">
+            <h2 class="text-gray-200 font-medium">Jason Carter</h2>
+            <p class="text-indigo-500">Recruitment Operations Manager</p>
+        </div>
+    </div>
+
+    <div class="group border border-slate-800 p-6 rounded-xl">
+        <p class="text-slate-100 text-base">
+            Our referral conversions jumped within weeks. The automation and tracking features are game-changing.
+        </p>
+        <div class="flex flex-col mt-8 group-hover:-translate-y-1 duration-300">
+            <h2 class="text-gray-200 font-medium">Kavya Srinivasan</h2>
+            <p class="text-indigo-500">Employee Experience Specialist</p>
+        </div>
+    </div>
+
+    <div class="group border border-slate-800 p-6 rounded-xl">
+        <p class="text-slate-100 text-base">
+            Real-time analytics gave us deep insight into hiring performance. Every metric is actionable.
+        </p>
+        <div class="flex flex-col mt-8 group-hover:-translate-y-1 duration-300">
+            <h2 class="text-gray-200 font-medium">Noah Williams</h2>
+            <p class="text-indigo-500">Workforce Analyst</p>
+        </div>
+    </div>
+
+    <div class="group border border-slate-800 p-6 rounded-xl">
+        <p class="text-slate-100 text-base">
+            The best platform we've used so far. Smooth integrations, powerful ATS, and top-tier candidate experience.
+        </p>
+        <div class="flex flex-col mt-8 group-hover:-translate-y-1 duration-300">
+            <h2 class="text-gray-200 font-medium">Ritika Sharma</h2>
+            <p class="text-indigo-500">Senior HR Partner</p>
+        </div>
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- Trusted Companies Section -->
+<section class="flex flex-col items-center">
+    <div class="flex flex-col items-center mt-32">
+        <h2 class="text-center text-4xl font-semibold max-w-2xl" style="opacity: 1; transform: none;">
+            Empowering
+            <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">
+                global teams
+            </span>
+        </h2>
+        <p class="text-center text-slate-400 max-w-lg mt-3">
+            Organisations across industries rely on InstaDev to streamline hiring,
+            amplify productivity, and enhance candidate experience with intelligent automation.
+        </p>
+    </div>
+
+    <div class="relative max-w-5xl py-20 md:py-26 mt-18 md:w-full overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white">
+        <div class="absolute pointer-events-none top-10 -z-1 left-20 size-64 bg-gradient-to-br from-[#536DFF] to-[#4F39F6]/60 blur-[180px]"></div>
+        <div class="absolute pointer-events-none bottom-10 -z-1 right-20 size-64 bg-gradient-to-br from-[#536DFF] to-[#4F39F6]/60 blur-[180px]"></div>
+
+        <div class="flex flex-col items-center md:items-start max-md:text-center">
+            <a href="#" class="group flex items-center gap-2 rounded-full text-sm p-1 pr-3 text-indigo-300 bg-indigo-200/15">
+                <span class="bg-indigo-600 text-white text-xs px-3.5 py-1 rounded-full">NEW</span>
+                <p class="flex items-center gap-1">
+                    <span>Explore our latest AI-powered hiring suite</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right group-hover:translate-x-0.5 transition duration-300">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </p>
+            </a>
+
+            <h1 class="text-3xl font-medium max-w-xl mt-5 bg-gradient-to-r from-white to-[#b6abff] text-transparent bg-clip-text">
+                Trusted by top recruiting and staffing teams.
+            </h1>
+
+            <p class="text-base text-slate-400 max-w-lg mt-4">
+                From fast-growing startups to enterprise HR teams, InstaDev powers
+                sourcing, engagement, and end-to-end applicant tracking — all in one unified platform.
+            </p>
+
+            <button class="flex items-center gap-1 text-sm px-6 py-2.5 border border-indigo-400 hover:bg-indigo-300/10 active:scale-95 transition rounded-full mt-6">
+                Learn more
+                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4243 5.42426C12.6586 5.18995 12.6586 4.81005 12.4243 4.57574L8.60589 0.757359C8.37157 0.523045 7.99167 0.523045 7.75736 0.757359C7.52304 0.991674 7.52304 1.37157 7.75736 1.60589L11.1515 5L7.75736 8.39411C7.52304 8.62843 7.52304 9.00833 7.75736 9.24264C7.99167 9.47696 8.37157 9.47696 8.60589 9.24264L12.4243 5.42426ZM0 5L0 5.6L12 5.6V5V4.4L0 4.4L0 5Z" fill="white"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="md:-mr-16 max-md:mt-10">
+            <img class="max-w-xs md:max-w-sm" alt="image" 
+                src="#">
+        </div>
+    </div>
+</section>
+
+   <!-- Contact Section (NRICodeSchool / InstaDev) -->
+<section class="flex flex-col items-center" id="contact">
+  <div class="flex flex-col items-center mt-32">
+    <h2 class="text-center text-4xl font-semibold max-w-2xl">
+      Get in
+      <span class="bg-gradient-to-t from-[#6b21a8] to-black p-1 bg-left inline-block bg-no-repeat">
+        touch
+      </span>
+    </h2>
+    <p class="text-center text-slate-400 max-w-lg mt-3">
+      Reach out for course details, demo requests, or career support. We respond quickly and
+      guide every student from training to placement.
+    </p>
+  </div>
+
+  <form id="nric-contact-form"
+        class="grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-3xl mx-auto text-slate-400 mt-16 w-full"
+        autocomplete="on" novalidate>
+    <div>
+      <label class="font-medium text-slate-200" for="contact-name">Your name</label>
+      <input id="contact-name" name="name" required
+             placeholder="Enter your name"
+             class="w-full mt-2 p-3 outline-none border border-slate-700 rounded-lg transition focus:ring-1 focus:ring-[#6b21a8]">
+    </div>
+
+    <div>
+      <label class="font-medium text-slate-200" for="contact-email">Email id</label>
+      <input id="contact-email" name="email" type="email" required
+             placeholder="Enter your email"
+             class="w-full mt-2 p-3 outline-none border border-slate-700 rounded-lg transition focus:ring-1 focus:ring-[#6b21a8]">
+    </div>
+
+    <div class="sm:col-span-2">
+      <label class="font-medium text-slate-200" for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" rows="8" required
+                placeholder="Enter your message"
+                class="resize-none w-full mt-2 p-3 outline-none rounded-lg transition focus:ring-1 focus:ring-[#6b21a8] border border-slate-700"></textarea>
+    </div>
+
+    <div class="sm:col-span-2 flex items-center gap-4">
+      <button id="contact-submit"
+              type="submit"
+              class="w-max flex items-center gap-2 bg-[#6b21a8] hover:bg-[#5a189a] text-white px-8 py-3 rounded-full transition active:scale-95">
+        Submit
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="lucide lucide-arrow-up-right size-4.5" aria-hidden="true">
+          <path d="M7 7h10v10"></path>
+          <path d="M7 17 17 7"></path>
+        </svg>
+      </button>
+
+      <div id="contact-status" class="text-sm text-slate-300" aria-live="polite"></div>
+    </div>
+  </form>
+</section>
+
+<script>
+(function () {
+  const form = document.getElementById('nric-contact-form');
+  const submitBtn = document.getElementById('contact-submit');
+  const statusEl = document.getElementById('contact-status');
+
+  // SheetDB endpoint (writes rows). Columns: Name, Email, Message
+  const SHEETDB_ENDPOINT = 'https://sheetdb.io/api/v1/kerx4m66aw2wk';
+
+  function setStatus(text, color) {
+    statusEl.textContent = text;
+    statusEl.style.color = color || '#cbd5e1'; // default slate-300
+  }
+
+  function validateEmail(email) {
+    // simple email validation
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    if (submitBtn.disabled) return;
+
+    // read values
+    const name = (document.getElementById('contact-name').value || '').trim();
+    const email = (document.getElementById('contact-email').value || '').trim();
+    const message = (document.getElementById('contact-message').value || '').trim();
+
+    // client-side validation
+    if (!name) { setStatus('Please enter your name.', '#f59e0b'); return; }
+    if (!email || !validateEmail(email)) { setStatus('Please enter a valid email address.', '#f87171'); return; }
+    if (!message) { setStatus('Please enter a message.', '#f59e0b'); return; }
+
+    // disable button to avoid double submits
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+    setStatus('Sending…', '#93c5fd');
+
+    // Prepare body in SheetDB JSON format:
+    // { "data": [ { "Name": "...", "Email": "...", "Message": "..." } ] }
+    const payload = {
+      data: [
+        {
+          Name: name,
+          Email: email,
+          Message: message
+        }
+      ]
+    };
+
+    try {
+      const resp = await fetch(SHEETDB_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!resp.ok) {
+        const text = await resp.text();
+        throw new Error('Server returned ' + resp.status + ' — ' + text);
+      }
+
+      // success
+      setStatus('Thank you — we received your message. We will contact you shortly.', '#34d399');
+      form.reset();
+
+    } catch (err) {
+      console.error('Contact form submit error:', err);
+      setStatus('Failed to send message. Please try again later.', '#f87171');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+      // optional: clear status after few seconds
+      setTimeout(() => {
+        // Only clear if still the same message text (prevents wiping new messages)
+        // Keep the success message for 6s, errors for 8s.
+        statusEl.textContent = '';
+      }, 7000);
+    }
+  });
+})();
+</script>
+
+
+    <!-- Subscribe Section -->
+    <section class="flex flex-col items-center">
+    <div class="flex flex-col items-center mt-32">
+        <h2 class="text-center text-4xl font-semibold max-w-2xl">
+            Join our 
+            <span class="bg-gradient-to-t from-[#6b21a8] to-black p-1 bg-left inline-block bg-no-repeat">
+                talent network
+            </span>
+        </h2>
+        <p class="text-center text-slate-400 max-w-lg mt-3">
+            Be the first to receive product updates, AI hiring insights, and exclusive early access
+            to new InstaDev features built for recruiters, teams, and fast-growing companies.
+        </p>
+    </div>
+
+    <div class="flex items-center justify-center mt-10 border border-slate-700 
+                focus-within:outline focus-within:outline-[#6b21a8] 
+                text-sm rounded-full h-14 max-w-xl w-full">
+        <input 
+            class="bg-transparent outline-none rounded-full px-4 h-full flex-1 
+                   placeholder:text-slate-400" 
+            placeholder="Enter your email address"
+            type="text">
+        <button 
+            class="bg-[#6b21a8] text-white rounded-full h-11 mr-1 px-10 
+                   flex items-center justify-center hover:bg-[#5a189a] 
+                   active:scale-95 transition">
+            Join now
+        </button>
+    </div>
+</section>
+
+
+    <!-- Footer Section (InstaDev) -->
+<footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full text-sm text-slate-400 mt-40">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+    <!-- Brand + Description -->
+    <div class="sm:col-span-2 lg:col-span-1">
+      <a href="/" class="inline-block">
+        <!-- replace src with your logo path -->
+        <img class="h-9 w-auto" width="138" height="36" alt="InstaDev" src="/assets/instadevlogo.svg">
+      </a>
+      <p class="text-sm/7 mt-6 text-slate-300">
+        InstaDev builds intelligent hiring tools — applicant tracking, automated screening, and candidate
+        experiences powered by AI. Trusted by talent teams to move faster and hire better.
+      </p>
+    </div>
+
+    <!-- Company Links -->
+    <div class="flex flex-col lg:items-center lg:justify-center">
+      <div class="flex flex-col text-sm space-y-2.5">
+        <h2 class="font-semibold mb-5 text-white">Company</h2>
+        <a class="hover:text-slate-200 transition" href="/about">About us</a>
+        <a class="hover:text-slate-200 transition" href="/careers">
+          Careers <span class="text-xs text-white bg-[#6b21a8] rounded-md ml-2 px-2 py-1">We’re hiring!</span>
+        </a>
+        <a class="hover:text-slate-200 transition" href="/contact">Contact us</a>
+        <!-- privacy opens modal -->
+        <button id="openPrivacy" class="text-left hover:text-slate-200 transition">
+          Privacy policy
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact / Mailto field (replaces newsletter) -->
+    <div>
+      <h2 class="font-semibold text-white mb-3">Contact</h2>
+      <p class="text-sm text-slate-300 mb-4">
+        For partnerships, demo requests or support — reach out to us directly.
+      </p>
+
+      <div class="flex items-center gap-2 p-2 rounded-md bg-slate-900 border border-slate-800 max-w-sm">
+        <input type="text"
+               readonly
+               value="instadev@atomicmail.io"
+               class="bg-transparent outline-none w-full py-2 px-2 text-slate-200"
+               aria-label="InstaDev email">
+        <a href="mailto:instadev@atomicmail.io"
+           class="inline-flex items-center gap-2 bg-[#6b21a8] hover:bg-[#5a189a] text-white px-4 py-2 rounded">
+          Mail us
+        </a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-3 max-w-sm">
+        Prefer scheduling a demo? Reply with your availability and we’ll confirm within one business day.
+      </p>
+    </div>
+  </div>
+
+  <p class="py-4 text-center border-t mt-6 border-slate-700 text-slate-500">
+    Copyright © 2026 <span class="text-white">InstaDev</span>. All rights reserved.
+  </p>
+</footer>
+
+<!-- Privacy Modal (hidden by default) -->
+<div id="privacyModal" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+  <!-- backdrop -->
+  <div id="privacyBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+  <!-- modal panel -->
+  <div role="dialog" aria-modal="true" aria-labelledby="privacyTitle"
+       class="relative max-w-3xl w-full bg-slate-900 text-slate-200 rounded-2xl p-6 md:p-8 z-10 border border-slate-700 shadow-xl">
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <h3 id="privacyTitle" class="text-xl font-semibold text-white">Privacy Policy — InstaDev</h3>
+        <p class="text-sm text-slate-400 mt-2">Last updated: December 2025</p>
+      </div>
+      <button id="closePrivacy" class="text-slate-400 hover:text-white p-2 rounded-md" aria-label="Close privacy dialog">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mt-6 space-y-4 text-sm leading-relaxed text-slate-300 max-h-[60vh] overflow-y-auto pr-2">
+      <p><strong>Overview.</strong> We collect and process only the data necessary to provide our services, improve platform performance, and communicate with you. We do not sell personal data.</p>
+
+      <p><strong>What we collect.</strong> Name, email, messages you voluntarily send via our contact form or email, usage metrics (page visits, feature usage) for performance and product insight, and cookies to maintain sessions.</p>
+
+      <p><strong>How we use data.</strong> To respond to enquiries, deliver demos, operate and improve our product, and send essential product communications. Marketing emails are only sent when you opt in; you can unsubscribe at any time.</p>
+
+      <p><strong>Security.</strong> We adopt industry-standard controls to protect data in transit and at rest. However, please avoid sending sensitive personal information via unencrypted email.</p>
+
+      <p><strong>Data retention & rights.</strong> You can request a copy, correction, or deletion of your personal data by emailing <a href="mailto:instadev@atomicmail.io" class="underline text-[#6b21a8]">instadev@atomicmail.io</a>. We will respond within a reasonable timeframe.</p>
+
+      <p><strong>Contact.</strong> Questions about this policy or data handling: <a href="mailto:instadev@atomicmail.io" class="underline text-[#6b21a8]">instadev@atomicmail.io</a>.</p>
+    </div>
+
+    <div class="mt-6 flex justify-end gap-3">
+      <button id="privacyClosePrimary" class="bg-[#6b21a8] hover:bg-[#5a189a] text-white px-4 py-2 rounded-md">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Minimal JS to handle modal open/close (drop into footer or main.js) -->
+<script>
+  (function () {
+    const openBtn = document.getElementById('openPrivacy');
+    const modal = document.getElementById('privacyModal');
+    const backdrop = document.getElementById('privacyBackdrop');
+    const closeBtn = document.getElementById('closePrivacy');
+    const closePrimary = document.getElementById('privacyClosePrimary');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // focus for accessibility
+      const focusable = modal.querySelector('[role="dialog"], button, a, input, textarea');
+      if (focusable) focusable.focus();
+      // prevent background scroll
+      document.documentElement.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.documentElement.style.overflow = '';
+      if (openBtn) openBtn.focus();
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (closePrimary) closePrimary.addEventListener('click', closeModal);
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+
+    // close on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+    });
+  })();
+</script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
